@@ -16,9 +16,7 @@ public class DataTest2 {
         button.addActionListener(event
                 -> System.out.println("Don't do it, you might regret it!")
         );
-        button.addActionListener(event
-                -> System.out.println("Come on, do it!")
-        );
+       
         frame.getContentPane().add(BorderLayout.CENTER, button);
 
         // Set frame properties
