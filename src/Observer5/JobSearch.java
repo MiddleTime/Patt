@@ -13,8 +13,6 @@ public class JobSearch {
     public static void main(String[] args) {
         JavaDevelopersJobSite jobSite = new JavaDevelopersJobSite();
         
-        jobSite.addVacancy("Java developer in Tallin");
-        jobSite.addVacancy("Java developer in Berlin");
         
         Observer firstSubsciber = new Subscriber("Jelena Petrova");
         Observer secondSubsciber = new Subscriber("Tim Hex");
@@ -25,7 +23,19 @@ public class JobSearch {
         jobSite.addObserver(secondSubsciber);
         jobSite.addObserver(thirdSubsciber);
         
+        jobSite.addVacancy("Java developer in Tallin");
+        jobSite.addVacancy("Java developer in Berlin");
         jobSite.addVacancy("java developer in Riga");
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         //удалить одну вакансию
         jobSite.removeVacancy("Java developer in Tallin");
