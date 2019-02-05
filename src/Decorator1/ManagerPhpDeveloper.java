@@ -15,7 +15,7 @@ public class ManagerPhpDeveloper extends DeveloperDecorator{
         super(developer);
     }
     public String sendInfo(){
-        return " Send info for coding";
+        return "  implements into сlient";
     } 
 
     @Override
