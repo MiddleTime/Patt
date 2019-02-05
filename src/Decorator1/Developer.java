@@ -5,8 +5,6 @@
  */
 package Decorator1;
 
-import DecoratorProblem.*;
-
 /**
  *
  * @author inbox_bv8awe9
