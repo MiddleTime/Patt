@@ -11,8 +11,10 @@ package Decorator1;
  */
 public class Task {
     public static void main(String[] args) {
-        Developer developer = new ManagerPhpDeveloper( new TesterPHPDeveloper(new PhpDeveloper()));
         
+        Developer developer = new ManagerPhpDeveloper( new TesterPHPDeveloper(new PhpDeveloper()));
+        Developer developerold  = new PhpDeveloper();
         System.out.println(developer.makeJob());
+        System.out.println(developerold.makeJob());
     }
 }
