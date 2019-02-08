@@ -9,18 +9,18 @@ package Decorator1;
  *
  * @author inbox_bv8awe9
  */
-public class FixErrorsPhpDeveloper extends DeveloperDecorator{
+public class SupportPhpDeveloper extends DeveloperDecorator{
     
-    public FixErrorsPhpDeveloper(Developer developer) {
+    public SupportPhpDeveloper(Developer developer) {
         super(developer);
     }
-    public String fixError(){
-        return "  errors fixed!";
+    public String supportProject(){
+        return "  supporting project...";
     } 
 
     @Override
     public String makeJob() {
-        return super.makeJob()+ fixError();
+        return super.makeJob()+ supportProject();
     }
     
 }
