@@ -1,4 +1,4 @@
-package Command0;
+package command;
 
 public class DeleteCommand implements Command{
     Database database;

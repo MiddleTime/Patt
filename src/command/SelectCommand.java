@@ -1,4 +1,4 @@
-package Command0;
+package command;
 
 public class SelectCommand implements Command{
     Database database;

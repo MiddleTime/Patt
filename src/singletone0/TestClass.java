@@ -20,5 +20,6 @@ public class TestClass {
         Singletone s1 = Singletone.getInstance();
         Singletone s2 = Singletone.getInstance(); //пытаемся создать второй экземпляр 
         
+      
     }
 }

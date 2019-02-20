@@ -1,5 +1,4 @@
-package command0;
-
+package command;
 
 public class DatabaseRunner {
     public static void main(String[] args) {
@@ -7,9 +6,13 @@ public class DatabaseRunner {
 
         Developer developer = new Developer(
                 new InsertCommand(database),
-                new UpdateCommand(database)
+                new UpdateCommand(database),
+                new SelectCommand(database),
+                new DeleteCommand(database)
         );
         developer.insertRecord();
         developer.updateRecord();
+        developer.selectRecord();
+        developer.deleteRecord();
     }
 }

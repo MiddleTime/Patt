@@ -1,5 +1,4 @@
-package command0;
-
+package command;
 
 public interface Command {
     public void execute();

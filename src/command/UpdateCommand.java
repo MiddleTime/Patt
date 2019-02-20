@@ -1,5 +1,4 @@
-package command0;
-
+package command;
 
 public class UpdateCommand implements Command{
     Database database;

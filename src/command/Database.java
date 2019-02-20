@@ -1,5 +1,4 @@
-package command0;
-
+package command;
 
 public class Database {
     public void insert(){
