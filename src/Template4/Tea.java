@@ -1,4 +1,5 @@
-package Template2;
+package Template4;
+
 
 public class Tea extends HotDrink{
 
