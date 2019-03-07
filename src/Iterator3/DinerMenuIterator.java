@@ -1,4 +1,4 @@
-package Iterator2;
+package Iterator3;
  
 import java.util.Iterator;
   
@@ -10,14 +10,12 @@ public class DinerMenuIterator implements Iterator<MenuItem> {
 		this.list = list;
 	}
  
-        @Override
 	public MenuItem next() {
 		MenuItem menuItem = list[position];
 		position = position + 1;
 		return menuItem;
 	}
  
-        @Override
 	public boolean hasNext() {
 		if (position >= list.length || list[position] == null) {
 			return false;
@@ -25,8 +23,7 @@ public class DinerMenuIterator implements Iterator<MenuItem> {
 			return true;
 		}
 	}
- 
-        @Override
+
 	public void remove() {
 		if (position <= 0) {
 			throw new IllegalStateException
