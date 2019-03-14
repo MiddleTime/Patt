@@ -1,7 +1,7 @@
-package MVC2.view;
+package MVC1.view;
 
-import MVC2.model.Model;
-import MVC2.controller.Controller;
+import MVC1.model.Model;
+import MVC1.controller.Controller;
 
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
@@ -82,7 +82,6 @@ public class SwingView implements ActionListener, View {
 
         return button;
     }
-
     private JTextField createField() {
         JTextField textField = new JTextField(15);
         textField.getDocument().addDocumentListener(new DocumentListener() {
@@ -90,32 +89,26 @@ public class SwingView implements ActionListener, View {
             public void changedUpdate(DocumentEvent e) {
                 updateAddButtonState();
             }
-
             @Override
             public void insertUpdate(DocumentEvent e) {
                 updateAddButtonState();
             }
-
             @Override
             public void removeUpdate(DocumentEvent e) {
                 updateAddButtonState();
             }
-
             private void updateAddButtonState() {
                 add.setEnabled(!field.getText().isEmpty());
             }
         });
-
         return textField;
     }
-
     private JList<String> createList() {
         JList<String> jList = new JList<>();
         jList.setPreferredSize(new Dimension(100, 100));
         jList.addListSelectionListener(e -> remove.setEnabled(!list.isSelectionEmpty()));
         return jList;
     }
-
     private class ModelWrapper extends AbstractListModel<String> implements Observer {
         private Model model;
 
@@ -123,7 +116,6 @@ public class SwingView implements ActionListener, View {
             this.model = model;
             model.addObserver(this);
         }
-
         @Override
         public String getElementAt(int index) {
             return model.get(index);

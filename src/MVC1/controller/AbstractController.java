@@ -1,7 +1,7 @@
-package MVC2.controller;
+package MVC1.controller;
 
-import MVC2.model.Model;
-import MVC2.view.View;
+import MVC1.model.Model;
+import MVC1.view.View;
 
 public abstract class AbstractController implements Controller {
     protected Model model;

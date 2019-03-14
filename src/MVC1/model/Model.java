@@ -1,5 +1,5 @@
 
-package MVC2.model;
+package MVC1.model;
   
 
 import java.util.ArrayList;

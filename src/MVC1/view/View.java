@@ -1,7 +1,7 @@
-package MVC2.view;
+package MVC1.view;
 
-import MVC2.model.Model;
-import MVC2.controller.Controller;
+import MVC1.model.Model;
+import MVC1.controller.Controller;
 
 public interface View {
     void dispose();

@@ -1,19 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package MVC2;
 
-import MVC2.model.Model;
-import MVC2.controller.Controller;
-import MVC2.controller.DefaultController;
-import MVC2.controller.DoNothingController;
-import MVC2.view.SwingView;
-import MVC2.view.View;
+package MVC1;
+
+import MVC1.model.Model;
+import MVC1.controller.Controller;
+import MVC1.controller.DefaultController;
+import MVC1.controller.DoNothingController;
+import MVC1.view.SwingView;
+import MVC1.view.View;
 
 import java.util.Objects;
-
 public class Main {
     private Model model;
     private View view;
@@ -25,7 +20,6 @@ public class Main {
         this.controller = controller;
         init();
     }
-
     public static void main(String[] args) {
         Controller controller = makeController(args);
         Main main = new Main(new Model(), new SwingView(), controller);

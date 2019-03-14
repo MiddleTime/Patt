@@ -1,4 +1,4 @@
-package MVC2.controller;
+package MVC1.controller;
 
 public class DefaultController extends AbstractController {
     @Override

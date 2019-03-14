@@ -1,13 +1,13 @@
-package MVC2.controller;
+package MVC1.controller;
 
 public class DoNothingController extends AbstractController {
     @Override
     public void addAction(String text) {
-        // do nothing
+        // нечего не делаем
     }
 
     @Override
     public void removeAction(String text) {
-        // do nothing
+        // нечего не делаем
     }
 }
