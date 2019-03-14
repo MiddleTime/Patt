@@ -1,4 +1,4 @@
-package MVC1;
+package MVC3;
   
 public class BeatController implements ControllerInterface {
 	BeatModelInterface model;

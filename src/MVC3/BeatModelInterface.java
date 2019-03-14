@@ -1,4 +1,4 @@
-package MVC1;
+package MVC3;
   
 public interface BeatModelInterface {
 //( методы, используемые контроллером для управления моделью 

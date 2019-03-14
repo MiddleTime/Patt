@@ -1,4 +1,4 @@
-package MVC1;
+package MVC3;
 
 import java.awt.*;
 import java.awt.event.*;
